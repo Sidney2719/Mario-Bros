@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Mario Bros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+    <div class="header">
+        <img src="./logo-header.png" alt="logo-header mario">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+    </div>
+
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="./logo.png" alt="logo mario Bros" class="logo-mario" />
+
+            <p> Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! </p>
+            <p> Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+
+            <button onclick="mostrarForm()">Entre em Contato</button>
+        </div>
+        <div>
+            <img src="./mario.png" alt="logo mario e Luigi" class="mario-luigi" />
+        </div>
+    </div>
+
+    <div class="caixa-video">
+        <video src="./video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5511948549575&text=Precisdo%20de%20ajuda!" class="link-whatsapp">
+        <img src="./whatsapp.png" alt="link para whatsapp">
+    </a>
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/kUFzUtTfZoq" method="POST"
+        enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="Nome">
+        <input placeholder="Seu Telefone" type="tel" name="Telefone">
+        <textarea placeholder="Digite aqui o seu problema..." name="Duvida"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
